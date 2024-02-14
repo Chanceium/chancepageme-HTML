@@ -1,0 +1,26 @@
+name: Check favicon in index.html
+
+on: [push]
+
+jobs:
+  check_favicon:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check favicon
+      run: |
+        FAVICON_LINE='<link rel="icon" href="favicon.ico">'
+        TITLE_LINE='<title>chancepage.me</title>'
+        INDEX_FILE='index.html'
+        TEMP_FILE='index_temp.html'
+
+        # Check if the favicon line is in the index.html
+        if ! grep -q "$FAVICON_LINE" $INDEX_FILE; then
+          # If not, add it after the title line
+          awk -v title="$TITLE_LINE" -v favicon="$FAVICON_LINE" \
+            '{print} $0 == title {print favicon}' $INDEX_FILE > $TEMP_FILE && mv $TEMP_FILE $INDEX_FILE
+          git add $INDEX_FILE
+        fi
