@@ -117,11 +117,22 @@
                 <button class="home-cta-btn1 button Anchor">ABOUT ME</button>
               </div>
             </div>
-            <img
-              alt="image"
-              src="https://play.teleporthq.io/static/svg/default-img.svg"
-              class="home-image"
-            />
+            <animate-on-reveal
+              animation="pulse"
+              duration="500ms"
+              delay="10s"
+              direction="normal"
+              easing="ease"
+              iteration="2000"
+            >
+              <img
+                alt="image"
+                src="https://media.licdn.com/dms/image/D5603AQFCvxfzNMD4yg/profile-displayphoto-shrink_800_800/0/1696629934850?e=2147483647&amp;v=beta&amp;t=5NJsKJ6bBa35zYxDw71L2JBtdNRMGe875B5qHU4bDhI"
+                loading="eager"
+                data-thq-animate-on-reveal="true"
+                class="home-image"
+              />
+            </animate-on-reveal>
           </div>
         </div>
         <div class="home-features">
@@ -304,5 +315,9 @@
       </div>
     </div>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
+    ></script>
   </body>
 </html>

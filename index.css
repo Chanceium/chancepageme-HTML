@@ -184,6 +184,7 @@
 .home-image {
   width: 40%;
   object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
 }
 .home-features {
   width: 100%;
