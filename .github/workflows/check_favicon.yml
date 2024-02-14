@@ -1,4 +1,4 @@
-name: Check favicon in index.html
+name: Post-Push Jobs
 
 on: [push]
 
