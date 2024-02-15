@@ -130,6 +130,14 @@
   justify-content: center;
   background-color: #f1f1f1;
 }
+.home-section-separator1 {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-blue);
+}
 .home-heading-container {
   width: 100%;
   display: flex;
@@ -183,9 +191,9 @@
 .home-git-hub {
   color: var(--dl-color-gray-white);
 }
-.home-section-separator1 {
+.home-section-separator2 {
   flex: 100;
-  width: 100px;
+  width: 55px;
   height: 0px;
   display: flex;
   align-items: flex-start;
@@ -214,7 +222,7 @@
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
 }
-.home-section-separator2 {
+.home-section-separator3 {
   width: 100%;
   height: 1px;
   display: flex;
@@ -356,7 +364,7 @@
 .home-text07 {
   text-align: center;
 }
-.home-section-separator3 {
+.home-section-separator4 {
   width: 100%;
   height: 1px;
   display: flex;
@@ -525,7 +533,7 @@
 .home-text17 {
   text-align: left;
 }
-.home-section-separator4 {
+.home-section-separator5 {
   width: 100%;
   height: 1px;
   display: flex;
@@ -692,7 +700,7 @@
   .home-about-text-container {
     width: 100%;
   }
-  .home-section-separator1 {
+  .home-section-separator2 {
     flex: 1;
     width: 55px;
   }
