@@ -98,12 +98,21 @@
 }
 .home-link04 {
   margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-link05 {
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.home-text {
   margin-bottom: var(--dl-space-space-unit);
 }
 .home-link06 {
   margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.home-link07 {
+  text-decoration: none;
 }
 .home-section-separator {
   width: 100%;
@@ -146,7 +155,7 @@
   color: #040404;
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text {
+.home-text02 {
   color: var(--dl-color-gray-black);
   margin-bottom: var(--dl-space-space-fiveunits);
 }
@@ -168,7 +177,7 @@
   text-decoration: none;
   background-color: #c9c9c9;
 }
-.home-text01 {
+.home-text03 {
   color: rgb(16, 16, 16);
 }
 .home-cta-btn1 {
@@ -214,10 +223,10 @@
   margin-bottom: var(--dl-space-space-fiveunits);
   flex-direction: column;
 }
-.home-text02 {
+.home-text04 {
   margin-bottom: var(--dl-space-space-fourunits);
 }
-.home-text03 {
+.home-text05 {
   text-align: center;
 }
 .home-cards-container {
@@ -259,7 +268,7 @@
 .home-heading3 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text04 {
+.home-text06 {
   text-align: center;
 }
 .home-card1 {
@@ -292,7 +301,7 @@
 .home-heading4 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text05 {
+.home-text07 {
   text-align: center;
 }
 .home-card2 {
@@ -325,7 +334,7 @@
 .home-heading5 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text06 {
+.home-text08 {
   text-align: center;
 }
 .home-section-separator2 {
@@ -398,7 +407,7 @@
   min-height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-text08 {
+.home-text10 {
   text-align: left;
 }
 .home-container3 {
@@ -415,7 +424,7 @@
   min-height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-text09 {
+.home-text11 {
   text-align: left;
 }
 .home-container4 {
@@ -432,7 +441,7 @@
   min-height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-text10 {
+.home-text12 {
   text-align: left;
 }
 .home-about-11 {
@@ -460,7 +469,7 @@
   min-height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-text11 {
+.home-text13 {
   text-align: left;
 }
 .home-container6 {
@@ -477,7 +486,7 @@
   min-height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-text15 {
+.home-text17 {
   text-align: left;
 }
 .home-container7 {
@@ -494,19 +503,8 @@
   min-height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-text16 {
+.home-text18 {
   text-align: left;
-}
-.home-link08 {
-  color: var(--dl-color-gray-white);
-  text-align: center;
-  padding-top: var(--dl-space-space-doubleunit);
-  padding-left: var(--dl-space-space-tenunits);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-tenunits);
-  padding-bottom: var(--dl-space-space-doubleunit);
-  text-decoration: none;
-  background-color: var(--dl-color-gray-black);
 }
 .home-section-separator3 {
   width: 100%;
@@ -537,42 +535,47 @@
   justify-content: space-between;
 }
 .home-social-links {
+  width: 299px;
+  height: 22px;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
 }
-.home-link09 {
+.home-link08 {
   display: contents;
 }
 .home-icon16 {
   width: 24px;
   height: 24px;
-  margin-right: var(--dl-space-space-doubleunit);
   text-decoration: none;
 }
-.home-link10 {
+.home-link09 {
   display: contents;
 }
 .home-icon18 {
   width: 24px;
   height: 24px;
-  margin-right: var(--dl-space-space-doubleunit);
   text-decoration: none;
 }
-.home-link11 {
+.home-link10 {
   display: contents;
 }
 .home-icon20 {
   width: 24px;
   height: 24px;
+  margin-right: var(--dl-space-space-doubleunit);
   text-decoration: none;
+}
+.home-icon22 {
+  width: 24px;
+  height: 24px;
 }
 .home-copyright-container {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.home-icon22 {
+.home-icon24 {
   width: 24px;
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
@@ -597,13 +600,13 @@
   .home-heading2 {
     text-align: center;
   }
-  .home-text {
+  .home-text02 {
     text-align: center;
   }
   .home-image {
     width: 100%;
   }
-  .home-text02 {
+  .home-text04 {
     text-align: center;
   }
 }
@@ -654,7 +657,7 @@
   .home-heading-container2 {
     width: 100%;
   }
-  .home-text07 {
+  .home-text09 {
     text-align: center;
   }
   .home-content-container3 {
@@ -672,6 +675,9 @@
 @media(max-width: 479px) {
   .home-burger-menu {
     margin-left: var(--dl-space-space-doubleunit);
+  }
+  .home-mobile-menu {
+    display: flex;
   }
   .home-about-text-container {
     width: 100%;
