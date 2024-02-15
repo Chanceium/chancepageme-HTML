@@ -362,7 +362,14 @@
   margin-bottom: var(--dl-space-space-tripleunit);
 }
 .home-text07 {
+  font-size: 16px;
   text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 1px;
+  text-transform: none;
+  text-decoration: none;
 }
 .home-section-separator4 {
   width: 100%;
@@ -374,7 +381,7 @@
 }
 .home-experience {
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
   flex-direction: column;
@@ -687,7 +694,7 @@
     width: 65%;
   }
 }
-@media(max-width: 479px) {
+@media(max-width: 400px) {
   .home-links-container {
     display: none;
   }
@@ -701,8 +708,8 @@
     width: 100%;
   }
   .home-section-separator2 {
-    flex: 1;
-    width: 55px;
+    flex: 0;
+    width: auto;
   }
   .home-card {
     width: 100%;
