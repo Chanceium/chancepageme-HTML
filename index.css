@@ -707,9 +707,17 @@
   .home-about-text-container {
     width: 100%;
   }
+  .home-git-btn {
+    width: 180px;
+    height: 48px;
+  }
   .home-section-separator2 {
-    flex: 0;
-    width: auto;
+    flex: 1;
+    width: 15px;
+  }
+  .home-link-btn {
+    width: 180px;
+    height: 48px;
   }
   .home-card {
     width: 100%;
