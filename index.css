@@ -716,6 +716,9 @@
   margin-right: var(--dl-space-space-doubleunit);
 }
 @media(max-width: 1600px) {
+  .home-expertise1 {
+    border-width: 0px;
+  }
   .home-social-bar {
     width: auto;
   }
