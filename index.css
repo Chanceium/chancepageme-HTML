@@ -720,6 +720,11 @@
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
+@media(max-width: 1200px) {
+  .home-portrait {
+    align-self: center;
+  }
+}
 @media(max-width: 991px) {
   .home-heading {
     text-align: center;
