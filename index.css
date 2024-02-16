@@ -390,7 +390,7 @@
   background-color: #f1f1f1;
 }
 .home-heading-container2 {
-  width: 1151px;
+  width: auto;
   display: flex;
   align-items: center;
   margin-bottom: var(--dl-space-space-fiveunits);
