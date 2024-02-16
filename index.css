@@ -121,7 +121,7 @@
 }
 .home-section-separator {
   width: 100%;
-  height: 1px;
+  height: 80px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -233,6 +233,8 @@
   margin-top: var(--dl-space-space-fiveunits);
   align-items: center;
   padding-top: var(--dl-space-space-fiveunits);
+  border-color: var(--dl-color-gray-black1);
+  border-width: 1px;
   padding-left: var(--dl-space-space-tripleunit);
   margin-bottom: var(--dl-space-space-fiveunits);
   padding-right: var(--dl-space-space-tripleunit);
