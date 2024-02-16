@@ -395,8 +395,10 @@
   align-items: center;
   margin-bottom: var(--dl-space-space-fiveunits);
   flex-direction: column;
+  justify-content: center;
 }
 .home-text08 {
+  text-align: center;
   margin-bottom: var(--dl-space-space-fourunits);
 }
 .home-text09 {
