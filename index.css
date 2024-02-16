@@ -377,6 +377,7 @@
 }
 .home-education1 {
   width: 100%;
+  position: relative;
   max-width: var(--dl-size-size-maxcontent);
   margin-top: var(--dl-space-space-fiveunits);
   align-items: center;
@@ -743,6 +744,9 @@
   }
   .home-text03 {
     text-align: center;
+  }
+  .home-heading-container2 {
+    width: auto;
   }
   .home-text08 {
     text-align: center;
