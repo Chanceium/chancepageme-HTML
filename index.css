@@ -466,7 +466,13 @@
   flex-direction: column;
 }
 .home-heading7 {
+  font-size: 24px;
+  font-style: normal;
+  font-family: Overpass;
+  font-weight: 700;
+  line-height: 1.55;
   margin-bottom: var(--dl-space-space-tripleunit);
+  text-transform: none;
 }
 .home-text25 {
   text-align: center;
