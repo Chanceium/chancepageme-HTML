@@ -231,6 +231,14 @@
               gtag('config', 'G-P3VM6L3S5');
     </script>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    <script>
+      window.onload = () => {
+          const button = document.querySelector('#myButton');
+          button.addEventListener('click', () => {
+              OpenWidget.call("maximize");
+          });
+      }
+    </script>
     <script
       defer=""
       src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
