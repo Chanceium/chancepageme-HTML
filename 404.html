@@ -233,7 +233,7 @@
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
     <script>
       window.onload = () => {
-          const button = document.querySelector('#myButton');
+          const button = document.querySelector('#contactButton');
           button.addEventListener('click', () => {
               OpenWidget.call('maximize');
           });
@@ -241,8 +241,10 @@
     </script>
     <script>
       window.onload = () => {
-          document.addEventListener('click', () => {
-              OpenWidget.call('minimize');
+          const button = document.querySelector('#contactButton');
+          button.addEventListener('click', (event) => {
+              event.stopPropagation(); // Prevent the click event from propagating further
+              OpenWidget.call('maximize');
           });
       }
     </script>
