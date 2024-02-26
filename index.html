@@ -227,11 +227,7 @@
               <a href="#experience" class="home-experience Navbar-Link">
                 Experience
               </a>
-              <a
-                href="index.html"
-                id="contactButton"
-                class="home-contact Navbar-Link"
-              >
+              <a href="#header" class="home-contact Navbar-Link contactButtons">
                 Contact
               </a>
             </div>
@@ -263,8 +259,7 @@
                 </a>
                 <a
                   href="mailto:chanceium@outlook.com?subject="
-                  id="contactButton"
-                  class="home-link3 Navbar-Link"
+                  class="home-link3 Navbar-Link contactButtons"
                 >
                   Contact
                 </a>
@@ -713,18 +708,12 @@
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
     <script>
       window.onload = () => {
-          const button = document.querySelector('#contactButton');
-          button.addEventListener('click', () => {
-              OpenWidget.call('maximize');
-          });
-      }
-    </script>
-    <script>
-      window.onload = () => {
-          const button = document.querySelector('#contactButton');
-          button.addEventListener('click', (event) => {
-              event.stopPropagation(); // Prevent the click event from propagating further
-              OpenWidget.call('maximize');
+          const buttons = document.querySelectorAll('.contactButtons');
+          buttons.forEach((button) => {
+              button.addEventListener('click', (event) => {
+                  event.stopPropagation();
+                  OpenWidget.call('maximize');
+              });
           });
       }
     </script>
