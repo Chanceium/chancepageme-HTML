@@ -185,36 +185,6 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
-    <!-- Start of OpenWidget (www.openwidget.com) code -->
-
-    <noscript>
-      You need to
-      <a
-        href="https://www.openwidget.com/enable-javascript"
-        rel="noopener nofollow"
-      >
-        enable JavaScript
-      </a>
-      to use the communication tool powered by
-      <a
-        href="https://www.openwidget.com/"
-        rel="noopener nofollow"
-        target="_blank"
-      >
-        OpenWidget
-      </a>
-    </noscript>
-    <!-- End of OpenWidget code -->
-    <style>
-      .toggle-content {
-          display: none;
-      }
-    </style>
-    <script>
-      window.__ow = window.__ow || {};
-      window.__ow.organizationId = "72afb9d7-07e2-4d81-a047-3c7888c1bb62";
-      ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
-    </script>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -236,7 +206,9 @@
               <a href="#experience" class="home-experience Navbar-Link">
                 Experience
               </a>
-              <span class="contactButtons Navbar-Link">Contact</span>
+              <a href="#header" class="home-contact contactButtons Navbar-Link">
+                Contact
+              </a>
             </div>
             <div data-role="BurgerMenu" class="home-burger-menu">
               <svg viewBox="0 0 1024 1024" class="home-icon">
@@ -362,10 +334,10 @@
                 />
               </div>
               <div class="home-content-container1">
-                <span class="home-heading4 Card-Heading">
+                <span class="home-heading4 toggle-header Card-Heading">
                   Network Automation
                 </span>
-                <span class="home-text04 Card-Text">
+                <span class="home-text04 toggle-content Card-Text">
                   I’m skilled in network automation with Ansible, understand
                   SDN, and the roles of the control, data, and management planes
                   in networking. I also have experience with Git for version
