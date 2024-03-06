@@ -221,18 +221,6 @@
           cursor: pointer;
       }
     </style>
-
-    <script>
-      window.onload = () => {
-          const buttons = document.querySelectorAll('.contactButtons');
-          buttons.forEach((button) => {
-              button.addEventListener('click', (event) => {
-                  event.stopPropagation();
-                  OpenWidget.call('maximize');
-              });
-          });
-      }
-    </script>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -284,18 +272,21 @@
       }
     </script>
     <script>
-      window.onload = function() {
-          var headers = document.getElementsByClassName('toggle-header');
-          for (var i = 0; i < headers.length; i++) {
-              headers[i].addEventListener('click', function() {
-                  var content = this.nextElementSibling;
-                  if (content.style.maxHeight){
-                      content.style.maxHeight = null;
+      window.onload = () => {
+          const buttons = document.querySelectorAll('.contactButtons');
+          console.log(`Found ${buttons.length} button(s)`);
+          buttons.forEach((button, index) => {
+              button.addEventListener('click', (event) => {
+                  event.stopPropagation();
+                  console.log(`Button ${index + 1} clicked`);
+                  if (OpenWidget && typeof OpenWidget.maximize === 'function') {
+                      OpenWidget.maximize();
+                      console.log('OpenWidget maximized');
                   } else {
-                      content.style.maxHeight = content.scrollHeight + "px";
+                      console.log('OpenWidget or maximize method not found');
                   }
               });
-          }
+          });
       }
     </script>
     <script

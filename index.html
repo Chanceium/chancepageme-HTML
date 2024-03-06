@@ -230,18 +230,6 @@
           cursor: pointer;
       }
     </style>
-
-    <script>
-      window.onload = () => {
-          const buttons = document.querySelectorAll('.contactButtons');
-          buttons.forEach((button) => {
-              button.addEventListener('click', (event) => {
-                  event.stopPropagation();
-                  OpenWidget.call('maximize');
-              });
-          });
-      }
-    </script>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -611,7 +599,7 @@
                   </span>
                 </div>
                 <div class="home-class-container11">
-                  <span class="home-class-header11 Card-Heading toggle-header">
+                  <span class="home-class-header11 toggle-header Card-Heading">
                     TELE20049 - Network Services and Protocols -&gt;
                   </span>
                   <span class="home-class-text11 toggle-content Card-Text">
@@ -635,10 +623,31 @@
                   </span>
                 </div>
                 <div class="home-class-container13">
-                  <span class="home-class-header13 Card-Heading toggle-header">
-                    SYST35144 - Cloud Computing -&gt;
+                  <span class="home-class-header13 toggle-header Card-Heading">
+                    TELE31831- Network Engineering 2 -&gt;
                   </span>
                   <span class="home-class-text13 toggle-content Card-Text">
+                    I gained an in-depth understanding of IP addressing, routing
+                    protocols, and their implementation in routers and switches.
+                    I learned about OSPF and IS-IS protocols, and how to design
+                    interconnected routing areas. I also acquired skills in
+                    designing efficient IP address allocation schemes using VLSM
+                    and CIDR, implementing hierarchical routing with OSPF, and
+                    using different interface types for connectivity.
+                    Additionally, I learned to implement basic security in
+                    routing, including authentication in routing advertisements,
+                    and was equipped with the ability to install and configure
+                    network monitoring tools, analyze OSPF packets, and
+                    troubleshoot routing networks. This course significantly
+                    enhanced my ability to manage complex network
+                    infrastructures.
+                  </span>
+                </div>
+                <div class="home-class-container14">
+                  <span class="home-class-header14 Card-Heading toggle-header">
+                    SYST35144 - Cloud Computing -&gt;
+                  </span>
+                  <span class="home-class-text14 toggle-content Card-Text">
                     I studied various aspects of cloud computing, including AWS
                     Elastic Cloud Compute EC2, AWS Cloud Access Control, AWS
                     Virtual Private Cloud VPC, and AWS Elastic Load balancer and
@@ -646,11 +655,11 @@
                     and Kubernetes.
                   </span>
                 </div>
-                <div class="home-class-container14">
-                  <span class="home-class-header14 toggle-header Card-Heading">
+                <div class="home-class-container15">
+                  <span class="home-class-header15 toggle-header Card-Heading">
                     DBAS14444 - Structured Data Modelling -&gt;
                   </span>
-                  <span class="home-class-text14 toggle-content Card-Text">
+                  <span class="home-class-text15 toggle-content Card-Text">
                     This course introduced me to the database environment and
                     development process. I learned about database design
                     terminology, data modeling, and its importance. I also
@@ -658,11 +667,11 @@
                     database management and development.
                   </span>
                 </div>
-                <div class="home-class-container15">
-                  <span class="home-class-header15 Card-Heading toggle-header">
+                <div class="home-class-container16">
+                  <span class="home-class-header16 Card-Heading toggle-header">
                     INFO34049 - Capstone Prototype -&gt;
                   </span>
-                  <span class="home-class-text15 toggle-content Card-Text">
+                  <span class="home-class-text16 toggle-content Card-Text">
                     In this class, I had the opportunity to apply my skills in
                     computer science, software engineering, and network
                     engineering to create a capstone project proposal. This
@@ -670,11 +679,11 @@
                     discipline and program in courses I had previously taken.
                   </span>
                 </div>
-                <div class="home-class-container16">
-                  <span class="home-class-header16 Card-Heading toggle-header">
+                <div class="home-class-container17">
+                  <span class="home-class-header17 Card-Heading toggle-header">
                     TELE35376 - Carrier Networks -&gt;
                   </span>
-                  <span class="home-class-text16 toggle-content">
+                  <span class="home-class-text17 toggle-content">
                     <span></span>
                     <span class="Card-Text">
                       In this course, I deep-dived into interpreting Hex Data,
@@ -683,11 +692,11 @@
                     </span>
                   </span>
                 </div>
-                <div class="home-class-container17">
-                  <span class="home-class-header17 toggle-header Card-Heading">
+                <div class="home-class-container18">
+                  <span class="home-class-header18 toggle-header Card-Heading">
                     TELE36058 - Software Defined Networks -&gt;
                   </span>
-                  <span class="home-class-text17 Card-Text toggle-content">
+                  <span class="home-class-text18 Card-Text toggle-content">
                     Finally, in this course, I studied automation using ansible,
                     netmiko, terraform, and software-defined networks. This
                     course equipped me with practical knowledge and skills in
@@ -851,18 +860,21 @@
       }
     </script>
     <script>
-      window.onload = function() {
-          var headers = document.getElementsByClassName('toggle-header');
-          for (var i = 0; i < headers.length; i++) {
-              headers[i].addEventListener('click', function() {
-                  var content = this.nextElementSibling;
-                  if (content.style.maxHeight){
-                      content.style.maxHeight = null;
+      window.onload = () => {
+          const buttons = document.querySelectorAll('.contactButtons');
+          console.log(`Found ${buttons.length} button(s)`);
+          buttons.forEach((button, index) => {
+              button.addEventListener('click', (event) => {
+                  event.stopPropagation();
+                  console.log(`Button ${index + 1} clicked`);
+                  if (OpenWidget && typeof OpenWidget.maximize === 'function') {
+                      OpenWidget.maximize();
+                      console.log('OpenWidget maximized');
                   } else {
-                      content.style.maxHeight = content.scrollHeight + "px";
+                      console.log('OpenWidget or maximize method not found');
                   }
               });
-          }
+          });
       }
     </script>
     <script
