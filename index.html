@@ -267,7 +267,10 @@
               <a href="#experience" class="home-experience Navbar-Link">
                 Experience
               </a>
-              <span class="clickable contactButtons unselectable Navbar-Link">
+              <span
+                data-openwidget-action="maximize"
+                class="clickable contactButtons unselectable Navbar-Link"
+              >
                 Contact
               </span>
             </div>
@@ -894,13 +897,13 @@
     </script>
     <script>
       window.onload = () => {
-        const buttons = document.querySelectorAll('.contactButtons');
-        buttons.forEach((button) => {
-            button.addEventListener('click', (event) => {
-                event.stopPropagation();
-                OpenWidget.call('maximize');
-            });
-        });
+          const buttons = document.querySelectorAll('.contactButtons');
+          buttons.forEach((button) => {
+              button.addEventListener('click', (event) => {
+                  event.stopPropagation();
+                  OpenWidget.call('maximize');
+              });
+          });
       }
     </script>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
