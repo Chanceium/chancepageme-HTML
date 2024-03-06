@@ -230,6 +230,18 @@
           cursor: pointer;
       }
     </style>
+
+    <script>
+      window.onload = () => {
+          const buttons = document.querySelectorAll('.contactButtons');
+          buttons.forEach((button) => {
+              button.addEventListener('click', (event) => {
+                  event.stopPropagation();
+                  OpenWidget.call('maximize');
+              });
+          });
+      }
+    </script>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -439,7 +451,7 @@
                   explore the future of technology!
                 </span>
                 <div class="home-class-container">
-                  <span class="home-class-header">
+                  <span class="home-class-header toggle-header">
                     COSC 1P02 - Introduction to Computer Science -&gt;
                   </span>
                   <span class="home-class-text Card-Text toggle-content">
@@ -456,7 +468,7 @@
                   <span class="home-class-header01 Card-Heading toggle-header">
                     MATH 1P66 - Mathematical Reasoning -&gt;
                   </span>
-                  <span class="home-class-text01 toggle-content Card-Text">
+                  <span class="home-class-text01 Card-Text toggle-content">
                     This course provided an introduction to mathematical
                     reasoning, logic, and proofs, including the use of
                     mathematical induction. Basics of set theory were also
@@ -822,17 +834,6 @@
       window.__ow = window.__ow || {};
       window.__ow.organizationId = "72afb9d7-07e2-4d81-a047-3c7888c1bb62";
       ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
-    </script>
-    <script>
-      window.onload = () => {
-          const buttons = document.querySelectorAll('.contactButtons');
-          buttons.forEach((button) => {
-              button.addEventListener('click', (event) => {
-                  event.stopPropagation();
-                  OpenWidget.call('maximize');
-              });
-          });
-      }
     </script>
     <script>
       window.onload = function() {

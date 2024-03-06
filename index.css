@@ -443,7 +443,7 @@
   align-self: flex-start;
   font-style: normal;
   text-align: left;
-  font-family: Overpass;
+  font-family: "Overpass";
   font-weight: 700;
   line-height: 1.55;
   margin-bottom: var(--dl-space-space-tripleunit);
