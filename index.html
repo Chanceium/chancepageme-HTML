@@ -225,6 +225,11 @@
           cursor: pointer;
       }
     </style>
+    <style>
+      .clickable {
+          cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -246,9 +251,7 @@
               <a href="#experience" class="home-experience Navbar-Link">
                 Experience
               </a>
-              <a href="#header" class="home-contact contactButtons Navbar-Link">
-                Contact
-              </a>
+              <span class="contactButtons Navbar-Link clickable">Contact</span>
             </div>
             <div data-role="BurgerMenu" class="home-burger-menu">
               <svg viewBox="0 0 1024 1024" class="home-icon">
@@ -837,7 +840,7 @@
           for (var i = 0; i < headers.length; i++) {
               headers[i].addEventListener('click', function() {
                   var content = this.nextElementSibling;
-                  if (content.style.display === "none") {
+                  if (content.style.display === "none" || content.style.display === "") {
                       content.style.display = "block";
                   } else {
                       content.style.display = "none";

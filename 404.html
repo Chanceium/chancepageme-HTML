@@ -216,6 +216,11 @@
           cursor: pointer;
       }
     </style>
+    <style>
+      .clickable {
+          cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -268,7 +273,7 @@
           for (var i = 0; i < headers.length; i++) {
               headers[i].addEventListener('click', function() {
                   var content = this.nextElementSibling;
-                  if (content.style.display === "none") {
+                  if (content.style.display === "none" || content.style.display === "") {
                       content.style.display = "block";
                   } else {
                       content.style.display = "none";
