@@ -602,7 +602,7 @@
                   <span class="home-class-header11 toggle-header Card-Heading">
                     TELE20049 - Network Services and Protocols -&gt;
                   </span>
-                  <span class="home-class-text11 toggle-content Card-Text">
+                  <span class="home-class-text11 Card-Text toggle-content">
                     I learned about a wide range of network services and
                     protocols, focusing on practical implementation and
                     analysis. This course equipped me with essential skills to
@@ -623,7 +623,7 @@
                   </span>
                 </div>
                 <div class="home-class-container13">
-                  <span class="home-class-header13 toggle-header Card-Heading">
+                  <span class="home-class-header13 Card-Heading toggle-header">
                     TELE31831- Network Engineering 2 -&gt;
                   </span>
                   <span class="home-class-text13 toggle-content Card-Text">
@@ -647,7 +647,7 @@
                   <span class="home-class-header14 Card-Heading toggle-header">
                     SYST35144 - Cloud Computing -&gt;
                   </span>
-                  <span class="home-class-text14 toggle-content Card-Text">
+                  <span class="home-class-text14 Card-Text toggle-content">
                     I studied various aspects of cloud computing, including AWS
                     Elastic Cloud Compute EC2, AWS Cloud Access Control, AWS
                     Virtual Private Cloud VPC, and AWS Elastic Load balancer and
@@ -838,6 +838,13 @@
               gtag('js', new Date());
               gtag('config', 'G-P3VM6L3S5');
     </script>
+    <script>
+      document.querySelectorAll('.contactButtons').forEach(button => {
+        button.addEventListener('click', function() {
+          OpenWidget.call('maximize');
+        });
+      });
+    </script>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
     <script>
       window.__ow = window.__ow || {};
@@ -857,24 +864,6 @@
                   }
               });
           }
-      }
-    </script>
-    <script>
-      window.onload = () => {
-          const buttons = document.querySelectorAll('.contactButtons');
-          console.log(`Found ${buttons.length} button(s)`);
-          buttons.forEach((button, index) => {
-              button.addEventListener('click', (event) => {
-                  event.stopPropagation();
-                  console.log(`Button ${index + 1} clicked`);
-                  if (OpenWidget && typeof OpenWidget.maximize === 'function') {
-                      OpenWidget.maximize();
-                      console.log('OpenWidget maximized');
-                  } else {
-                      console.log('OpenWidget or maximize method not found');
-                  }
-              });
-          });
       }
     </script>
     <script

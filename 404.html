@@ -250,6 +250,13 @@
               gtag('js', new Date());
               gtag('config', 'G-P3VM6L3S5');
     </script>
+    <script>
+      document.querySelectorAll('.contactButtons').forEach(button => {
+        button.addEventListener('click', function() {
+          OpenWidget.call('maximize');
+        });
+      });
+    </script>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
     <script>
       window.__ow = window.__ow || {};
@@ -269,24 +276,6 @@
                   }
               });
           }
-      }
-    </script>
-    <script>
-      window.onload = () => {
-          const buttons = document.querySelectorAll('.contactButtons');
-          console.log(`Found ${buttons.length} button(s)`);
-          buttons.forEach((button, index) => {
-              button.addEventListener('click', (event) => {
-                  event.stopPropagation();
-                  console.log(`Button ${index + 1} clicked`);
-                  if (OpenWidget && typeof OpenWidget.maximize === 'function') {
-                      OpenWidget.maximize();
-                      console.log('OpenWidget maximized');
-                  } else {
-                      console.log('OpenWidget or maximize method not found');
-                  }
-              });
-          });
       }
     </script>
     <script
