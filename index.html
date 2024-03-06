@@ -251,7 +251,7 @@
               <a href="#experience" class="home-experience Navbar-Link">
                 Experience
               </a>
-              <span class="contactButtons Navbar-Link clickable">Contact</span>
+              <span class="clickable contactButtons Navbar-Link">Contact</span>
             </div>
             <div data-role="BurgerMenu" class="home-burger-menu">
               <svg viewBox="0 0 1024 1024" class="home-icon">
@@ -442,30 +442,18 @@
                   <span class="home-class-header">
                     COSC 1P02 - Introduction to Computer Science -&gt;
                   </span>
-                  <animate-on-reveal
-                    animation="bounce"
-                    duration="1000ms"
-                    delay="0s"
-                    direction="normal"
-                    easing="step-end"
-                    iteration="1"
-                  >
-                    <span
-                      data-thq-animate-on-reveal="true"
-                      class="home-class-text Card-Text toggle-content"
-                    >
-                      This course provided a foundational understanding of
-                      computer science and computer programming using a
-                      high-level language, typically Java. Topics covered
-                      included computer fundamentals, information
-                      representation, problem-solving, software development,
-                      programming language syntax and semantics, methods,
-                      input/output, control structures, and data types.
-                    </span>
-                  </animate-on-reveal>
+                  <span class="home-class-text Card-Text toggle-content">
+                    This course provided a foundational understanding of
+                    computer science and computer programming using a high-level
+                    language, typically Java. Topics covered included computer
+                    fundamentals, information representation, problem-solving,
+                    software development, programming language syntax and
+                    semantics, methods, input/output, control structures, and
+                    data types.
+                  </span>
                 </div>
                 <div class="home-class-container01">
-                  <span class="home-class-header01 toggle-header Card-Heading">
+                  <span class="home-class-header01 Card-Heading toggle-header">
                     MATH 1P66 - Mathematical Reasoning -&gt;
                   </span>
                   <span class="home-class-text01 toggle-content Card-Text">
@@ -856,6 +844,21 @@
                       content.style.display = "block";
                   } else {
                       content.style.display = "none";
+                  }
+              });
+          }
+      }
+    </script>
+    <script>
+      window.onload = function() {
+          var headers = document.getElementsByClassName('toggle-header');
+          for (var i = 0; i < headers.length; i++) {
+              headers[i].addEventListener('click', function() {
+                  var content = this.nextElementSibling;
+                  if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                  } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
                   }
               });
           }
