@@ -221,6 +221,14 @@
           cursor: pointer;
       }
     </style>
+    <style>
+      .unselectable {
+        -webkit-user-select: none; /* Chrome, Safari, Opera */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none; /* Standard syntax */
+      }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -251,11 +259,15 @@
               gtag('config', 'G-P3VM6L3S5');
     </script>
     <script>
-      document.querySelectorAll('.contactButtons').forEach(button => {
-        button.addEventListener('click', function() {
-          OpenWidget.call('maximize');
-        });
-      });
+      window.onload = () => {
+          const buttons = document.querySelectorAll('.contactButtons');
+          buttons.forEach((button) => {
+              button.addEventListener('click', (event) => {
+                  event.stopPropagation();
+                  OpenWidget.call('maximize');
+              });
+          });
+      }
     </script>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
     <script>

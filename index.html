@@ -230,6 +230,14 @@
           cursor: pointer;
       }
     </style>
+    <style>
+      .unselectable {
+        -webkit-user-select: none; /* Chrome, Safari, Opera */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none; /* Standard syntax */
+      }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -241,17 +249,27 @@
           <div class="home-navbar">
             <span class="Card-Heading home-heading">Chance Page</span>
             <div class="home-links-container">
-              <a href="#about" class="home-about Navbar-Link">About</a>
-              <a href="#expertise" class="home-expertise Navbar-Link">
+              <a href="#about" class="home-about Navbar-Link unselectable">
+                About
+              </a>
+              <a
+                href="#expertise"
+                class="home-expertise Navbar-Link unselectable"
+              >
                 Expertise
               </a>
-              <a href="#education" class="home-education Navbar-Link">
+              <a
+                href="#education"
+                class="home-education Navbar-Link unselectable"
+              >
                 Education
               </a>
               <a href="#experience" class="home-experience Navbar-Link">
                 Experience
               </a>
-              <span class="clickable contactButtons Navbar-Link">Contact</span>
+              <span class="clickable contactButtons Navbar-Link unselectable">
+                Contact
+              </span>
             </div>
             <div data-role="BurgerMenu" class="home-burger-menu">
               <svg viewBox="0 0 1024 1024" class="home-icon">
@@ -439,7 +457,7 @@
                   explore the future of technology!
                 </span>
                 <div class="home-class-container">
-                  <span class="home-class-header toggle-header">
+                  <span class="home-class-header toggle-header unselectable">
                     COSC 1P02 - Introduction to Computer Science -&gt;
                   </span>
                   <span class="home-class-text Card-Text toggle-content">
@@ -453,7 +471,9 @@
                   </span>
                 </div>
                 <div class="home-class-container01">
-                  <span class="home-class-header01 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header01 Card-Heading toggle-header unselectable"
+                  >
                     MATH 1P66 - Mathematical Reasoning -&gt;
                   </span>
                   <span class="home-class-text01 Card-Text toggle-content">
@@ -464,7 +484,9 @@
                   </span>
                 </div>
                 <div class="home-class-container02">
-                  <span class="home-class-header02 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header02 Card-Heading toggle-header unselectable"
+                  >
                     COSC 1P03 - Introduction to Data Structures -&gt;
                   </span>
                   <span class="home-class-text02 toggle-content Card-Text">
@@ -479,7 +501,9 @@
                   </span>
                 </div>
                 <div class="home-class-container03">
-                  <span class="home-class-header03 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header03 Card-Heading toggle-header unselectable"
+                  >
                     MATH 1P67 - Mathematics for Computer Science -&gt;
                   </span>
                   <span class="home-class-text03 toggle-content Card-Text">
@@ -490,7 +514,9 @@
                   </span>
                 </div>
                 <div class="home-class-container04">
-                  <span class="home-class-header04 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header04 Card-Heading toggle-header unselectable"
+                  >
                     COSC 1P50 - Integrity and Literacy in Information Age -&gt;
                   </span>
                   <span class="home-class-text04 toggle-content Card-Text">
@@ -505,7 +531,9 @@
                   </span>
                 </div>
                 <div class="home-class-container05">
-                  <span class="home-class-header05 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header05 Card-Heading toggle-header unselectable"
+                  >
                     MATH 1P97 - Calculus With Applications -&gt;
                   </span>
                   <span class="home-class-text05 toggle-content Card-Text">
@@ -517,7 +545,9 @@
                   </span>
                 </div>
                 <div class="home-class-container06">
-                  <span class="home-class-header06 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header06 Card-Heading toggle-header unselectable"
+                  >
                     MATH 1P12 - Applied Linear Algebra -&gt;
                   </span>
                   <span class="home-class-text06 Card-Text toggle-content">
@@ -529,7 +559,9 @@
                   </span>
                 </div>
                 <div class="home-class-container07">
-                  <span class="home-class-header07 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header07 Card-Heading toggle-header unselectable"
+                  >
                     MATH 1P98 - Practical Statistics -&gt;
                   </span>
                   <span class="home-class-text07 toggle-content Card-Text">
@@ -542,7 +574,9 @@
                   </span>
                 </div>
                 <div class="home-class-container08">
-                  <span class="home-class-header08 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header08 Card-Heading toggle-header unselectable"
+                  >
                     COSC 2P03 - Advanced Data Structures -&gt;
                   </span>
                   <span class="home-class-text08 Card-Text toggle-content">
@@ -554,7 +588,9 @@
                   </span>
                 </div>
                 <div class="home-class-container09">
-                  <span class="home-class-header09 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header09 Card-Heading toggle-header unselectable"
+                  >
                     COSC 2P12 - Introduction to Computer Architecture -&gt;
                   </span>
                   <span class="home-class-text09 toggle-content Card-Text">
@@ -587,7 +623,9 @@
                   technology together!
                 </span>
                 <div class="home-class-container10">
-                  <span class="home-class-header10 toggle-header Card-Heading">
+                  <span
+                    class="home-class-header10 toggle-header Card-Heading unselectable"
+                  >
                     TELE20102 - Wi-Fi Networks -&gt;
                   </span>
                   <span class="home-class-text10 Card-Text toggle-content">
@@ -599,7 +637,9 @@
                   </span>
                 </div>
                 <div class="home-class-container11">
-                  <span class="home-class-header11 toggle-header Card-Heading">
+                  <span
+                    class="home-class-header11 toggle-header Card-Heading unselectable"
+                  >
                     TELE20049 - Network Services and Protocols -&gt;
                   </span>
                   <span class="home-class-text11 Card-Text toggle-content">
@@ -611,7 +651,9 @@
                   </span>
                 </div>
                 <div class="home-class-container12">
-                  <span class="home-class-header12 toggle-header Card-Heading">
+                  <span
+                    class="home-class-header12 toggle-header Card-Heading unselectable"
+                  >
                     TELE28648 - Network Engineering 1 -&gt;
                   </span>
                   <span class="home-class-text12 toggle-content Card-Text">
@@ -623,7 +665,9 @@
                   </span>
                 </div>
                 <div class="home-class-container13">
-                  <span class="home-class-header13 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header13 Card-Heading toggle-header unselectable"
+                  >
                     TELE31831- Network Engineering 2 -&gt;
                   </span>
                   <span class="home-class-text13 toggle-content Card-Text">
@@ -644,7 +688,9 @@
                   </span>
                 </div>
                 <div class="home-class-container14">
-                  <span class="home-class-header14 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header14 Card-Heading toggle-header unselectable"
+                  >
                     SYST35144 - Cloud Computing -&gt;
                   </span>
                   <span class="home-class-text14 Card-Text toggle-content">
@@ -656,7 +702,9 @@
                   </span>
                 </div>
                 <div class="home-class-container15">
-                  <span class="home-class-header15 toggle-header Card-Heading">
+                  <span
+                    class="home-class-header15 toggle-header Card-Heading unselectable"
+                  >
                     DBAS14444 - Structured Data Modelling -&gt;
                   </span>
                   <span class="home-class-text15 toggle-content Card-Text">
@@ -668,7 +716,9 @@
                   </span>
                 </div>
                 <div class="home-class-container16">
-                  <span class="home-class-header16 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header16 Card-Heading toggle-header unselectable"
+                  >
                     INFO34049 - Capstone Prototype -&gt;
                   </span>
                   <span class="home-class-text16 toggle-content Card-Text">
@@ -680,7 +730,9 @@
                   </span>
                 </div>
                 <div class="home-class-container17">
-                  <span class="home-class-header17 Card-Heading toggle-header">
+                  <span
+                    class="home-class-header17 Card-Heading toggle-header unselectable"
+                  >
                     TELE35376 - Carrier Networks -&gt;
                   </span>
                   <span class="home-class-text17 toggle-content">
@@ -693,7 +745,9 @@
                   </span>
                 </div>
                 <div class="home-class-container18">
-                  <span class="home-class-header18 toggle-header Card-Heading">
+                  <span
+                    class="home-class-header18 toggle-header Card-Heading unselectable"
+                  >
                     TELE36058 - Software Defined Networks -&gt;
                   </span>
                   <span class="home-class-text18 Card-Text toggle-content">
@@ -839,11 +893,15 @@
               gtag('config', 'G-P3VM6L3S5');
     </script>
     <script>
-      document.querySelectorAll('.contactButtons').forEach(button => {
-        button.addEventListener('click', function() {
-          OpenWidget.call('maximize');
-        });
-      });
+      window.onload = () => {
+          const buttons = document.querySelectorAll('.contactButtons');
+          buttons.forEach((button) => {
+              button.addEventListener('click', (event) => {
+                  event.stopPropagation();
+                  OpenWidget.call('maximize');
+              });
+          });
+      }
     </script>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
     <script>
