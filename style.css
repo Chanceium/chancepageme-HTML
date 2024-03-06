@@ -62,7 +62,9 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-l-gray);
 }
-
+.contactButtons {
+  data-openwidget-action: maximize;
+}
 
 
 
