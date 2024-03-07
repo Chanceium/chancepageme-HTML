@@ -364,7 +364,7 @@
 }
 .home-certificates {
   width: 100%;
-  display: flex;
+  display: none;
   max-width: var(--dl-size-size-maxcontent);
   margin-top: var(--dl-space-space-fiveunits);
   align-items: center;
