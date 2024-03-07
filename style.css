@@ -1,10 +1,10 @@
 :root {
-  --dl-color-gray-blue: #61b2f1ff;
-  --dl-color-gray-white: #ffffffff;
   --dl-space-space-unit: 8px;
-  --dl-color-gray-black1: #000000ff;
-  --dl-color-gray-d-gray: #999999;
-  --dl-color-gray-l-gray: #f1f1f1ff;
+  --dl-color-colors-blue: #61b2f1ff;
+  --dl-color-colors-white: #ffffffff;
+  --dl-color-colors-black1: #000000ff;
+  --dl-color-colors-d-gray: #999999;
+  --dl-color-colors-l-gray: #f1f1f1ff;
   --dl-radius-radius-round: 50%;
   --dl-size-size-maxcontent: 1414px;
   --dl-space-space-halfunit: 4px;
@@ -14,6 +14,7 @@
   --dl-radius-radius-radius8: 8px;
   --dl-space-space-fiveunits: 40px;
   --dl-space-space-fourunits: 32px;
+  --dl-color-colors-lightblue: #bde0fdff;
   --dl-space-space-doubleunit: 16px;
   --dl-space-space-tripleunit: 24px;
 }
@@ -37,7 +38,7 @@
   border-color: #000000;
   border-width: 1px;
   border-radius: 4px;
-  background-color: var(--dl-color-gray-l-gray);
+  background-color: var(--dl-color-colors-l-gray);
 }
 .list-item {
   display: list-item;
@@ -50,7 +51,7 @@
   border-color: #000000;
   border-width: 1px;
   border-radius: 4px;
-  background-color: var(--dl-color-gray-l-gray);
+  background-color: var(--dl-color-colors-l-gray);
 }
 .input {
   color: #000000;
@@ -60,7 +61,7 @@
   border-color: #000000;
   border-width: 1px;
   border-radius: 4px;
-  background-color: var(--dl-color-gray-l-gray);
+  background-color: var(--dl-color-colors-l-gray);
 }
 .contactButtons {
   data-openwidget-action: maximize;
