@@ -450,8 +450,12 @@
   margin-bottom: var(--dl-space-space-tripleunit);
   flex-direction: column;
 }
+.home-link7 {
+  display: contents;
+}
 .home-pasted-image2 {
   width: 150px;
+  text-decoration: none;
 }
 .home-content-container4 {
   display: flex;
@@ -1449,7 +1453,7 @@
   .home-copyright-container {
     align-self: center;
   }
-  .home-link7 {
+  .home-link8 {
     text-align: left;
   }
 }
